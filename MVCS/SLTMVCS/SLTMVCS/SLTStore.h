@@ -7,7 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SLTUserModel.h"
+
+@class SLTStore;
+
+@protocol SLTStoreDelegate <NSObject>
+
+- (void)loginSuccessWithStore:(SLTStore *)store;
+- (void)loginFailureWithStore:(SLTStore *)store;
+
+@end
 
 @interface SLTStore : NSObject
+
++ (instancetype)sharedInstance;
+
+//weak reference
+- (void)bindDelegate:(id<SLTStoreDelegate>)delegate;
+- (void)unbindDelegate:(id<SLTStoreDelegate>)delegate;
+
+- (void)loginWithModel:(SLTUserModel *)model;
+
+- (NSString *)token;
 
 @end

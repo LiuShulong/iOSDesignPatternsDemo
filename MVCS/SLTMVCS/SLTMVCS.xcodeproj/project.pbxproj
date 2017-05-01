@@ -14,6 +14,8 @@
 		748E0F8B1EB78E040077560F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748E0F8A1EB78E040077560F /* Assets.xcassets */; };
 		748E0F8E1EB78E040077560F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748E0F8C1EB78E040077560F /* LaunchScreen.storyboard */; };
 		748E0F991EB78E040077560F /* SLTMVCSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E0F981EB78E040077560F /* SLTMVCSTests.m */; };
+		748E0FA51EB78E500077560F /* SLTStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E0FA41EB78E500077560F /* SLTStore.m */; };
+		748E0FA81EB78E5F0077560F /* SLTUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E0FA71EB78E5F0077560F /* SLTUserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		748E0F941EB78E040077560F /* SLTMVCSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLTMVCSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		748E0F981EB78E040077560F /* SLTMVCSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLTMVCSTests.m; sourceTree = "<group>"; };
 		748E0F9A1EB78E040077560F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		748E0FA31EB78E500077560F /* SLTStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTStore.h; sourceTree = "<group>"; };
+		748E0FA41EB78E500077560F /* SLTStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTStore.m; sourceTree = "<group>"; };
+		748E0FA61EB78E5F0077560F /* SLTUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTUserModel.h; sourceTree = "<group>"; };
+		748E0FA71EB78E5F0077560F /* SLTUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTUserModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				748E0F821EB78E040077560F /* AppDelegate.m */,
 				748E0F841EB78E040077560F /* ViewController.h */,
 				748E0F851EB78E040077560F /* ViewController.m */,
+				748E0FA31EB78E500077560F /* SLTStore.h */,
+				748E0FA41EB78E500077560F /* SLTStore.m */,
+				748E0FA61EB78E5F0077560F /* SLTUserModel.h */,
+				748E0FA71EB78E5F0077560F /* SLTUserModel.m */,
 				748E0F871EB78E040077560F /* Main.storyboard */,
 				748E0F8A1EB78E040077560F /* Assets.xcassets */,
 				748E0F8C1EB78E040077560F /* LaunchScreen.storyboard */,
@@ -160,7 +170,6 @@
 				TargetAttributes = {
 					748E0F7A1EB78E040077560F = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = YREGVU8659;
 						ProvisioningStyle = Automatic;
 					};
 					748E0F931EB78E040077560F = {
@@ -216,8 +225,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				748E0F861EB78E040077560F /* ViewController.m in Sources */,
+				748E0FA51EB78E500077560F /* SLTStore.m in Sources */,
 				748E0F831EB78E040077560F /* AppDelegate.m in Sources */,
 				748E0F801EB78E040077560F /* main.m in Sources */,
+				748E0FA81EB78E5F0077560F /* SLTUserModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YREGVU8659;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SLTMVCS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liushulong.SLTMVCS;
@@ -367,7 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YREGVU8659;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SLTMVCS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liushulong.SLTMVCS;

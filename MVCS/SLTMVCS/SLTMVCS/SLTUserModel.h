@@ -10,4 +10,6 @@
 
 @interface SLTUserModel : NSObject
 
+@property (nonatomic,copy) NSString *name;
+
 @end
