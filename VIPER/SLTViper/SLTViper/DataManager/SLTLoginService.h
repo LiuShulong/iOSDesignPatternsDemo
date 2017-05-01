@@ -10,4 +10,6 @@
 
 @interface SLTLoginService : NSObject
 
++ (void)requestLoginAPIWithName:(NSString *)name complete:(void(^)(BOOL isSuccess))complete;
+
 @end

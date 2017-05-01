@@ -10,4 +10,6 @@
 
 @protocol SLTInteractorDelegate <NSObject>
 
+- (void)requestLoginWithName:(NSString *)name;
+
 @end

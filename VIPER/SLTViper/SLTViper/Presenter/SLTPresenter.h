@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SLTPresenterDelegate.h"
+#import "SLTInteractorDelegate.h"
+#import "SLTInteractorIODelegate.h"
+#import "SLTViewDelegate.h"
 
-@interface SLTPresenter : NSObject
+@interface SLTPresenter : NSObject<SLTPresenterDelegate,SLTInteractorIODelegate>
+
+@property (nonatomic,strong) id<SLTInteractorDelegate>              interactor;
+@property (nonatomic,weak)   id<SLTViewDelegate>                    userInterface;
 
 @end

@@ -10,12 +10,9 @@
 
 @implementation SLTLoginWireFrame
 
-- (void)showVC:(UIViewController *)vc {
-    [self.rootNav pushViewController:vc animated:YES];
-}
-
-- (void)pop {
-    [self.rootNav popViewControllerAnimated:YES];
+- (void)showLoginVC {
+    self.window.rootViewController = self.vc;
+    [self.window makeKeyAndVisible];
 }
 
 @end

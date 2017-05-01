@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "SLTLoginWireFrame.h"
+#import "SLTPresenter.h"
+#import "SLTInteractor.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +21,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self createView];
+    [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+- (void)createView {
+    
+    ViewController *view = [[ViewController alloc] init];
+    
+    //组装viper
+    SLTLoginWireFrame *wire = [[SLTLoginWireFrame alloc] init];
+    wire.vc = view;
+    wire.window = self.window;
+    
+    SLTPresenter *presenter = [[SLTPresenter alloc] init];
+    view.eventHandler = presenter;
+    presenter.userInterface = view;
+    
+    SLTInteractor *interactor = [[SLTInteractor alloc] init];
+    presenter.interactor = interactor;
+    interactor.ioDelegate = presenter;
+    
+    [wire showLoginVC];
 }
 
 

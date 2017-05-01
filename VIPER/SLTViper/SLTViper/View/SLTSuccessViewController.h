@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class SLTSucPageWireFrame;
+
 @interface SLTSuccessViewController : UIViewController
+
+@property (nonatomic,strong) SLTSucPageWireFrame *wireFrame;
 
 @end

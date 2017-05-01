@@ -12,5 +12,6 @@
 
 - (void)showSuccessPage;
 - (void)showErrorAlert;
+- (void)refresh;
 
 @end

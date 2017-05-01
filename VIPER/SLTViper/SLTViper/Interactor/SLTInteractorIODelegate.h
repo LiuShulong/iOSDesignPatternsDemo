@@ -10,4 +10,7 @@
 
 @protocol SLTInteractorIODelegate <NSObject>
 
+- (void)loginSuccess;
+- (void)loginFailure;
+
 @end

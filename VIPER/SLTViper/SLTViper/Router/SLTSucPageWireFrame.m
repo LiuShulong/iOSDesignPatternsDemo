@@ -10,4 +10,14 @@
 
 @implementation SLTSucPageWireFrame
 
+- (void)showFromVC:(UIViewController *)vc {
+    [vc presentViewController:self.vc animated:YES completion:^{
+        
+    }];
+}
+
+- (void)dismiss {
+    [self.vc dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

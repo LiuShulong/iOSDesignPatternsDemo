@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ViewController.h"
 #import <UIKit/UIKit.h>
 
 @interface SLTLoginWireFrame : NSObject
 
-@property (nonatomic,strong) UINavigationController *rootNav;
+@property (nonatomic,weak) UIWindow         *window;
+@property (nonatomic,weak) UIViewController *vc;
 
-- (void)showVC:(UIViewController *)vc;
-
-- (void)pop;
+- (void)showLoginVC;
 
 @end

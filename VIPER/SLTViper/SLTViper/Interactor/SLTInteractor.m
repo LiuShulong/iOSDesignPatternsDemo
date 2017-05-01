@@ -7,7 +7,24 @@
 //
 
 #import "SLTInteractor.h"
+#import "SLTLoginService.h"
 
 @implementation SLTInteractor
+
+- (void)requestLoginWithName:(NSString *)name {
+    if ([name length] == 0) {
+        [self.ioDelegate loginFailure];
+        return;
+    }
+    
+    [SLTLoginService requestLoginAPIWithName:name complete:^(BOOL isSuccess) {
+        if (isSuccess) {
+            [self.ioDelegate loginSuccess];
+        } else {
+            [self.ioDelegate loginFailure];
+        }
+    }];
+    
+}
 
 @end

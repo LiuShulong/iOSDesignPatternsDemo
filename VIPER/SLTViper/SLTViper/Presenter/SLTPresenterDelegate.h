@@ -10,4 +10,8 @@
 
 @protocol SLTPresenterDelegate <NSObject>
 
+- (void)loginWithName:(NSString *)name;
+
+- (void)refreshAction;
+
 @end

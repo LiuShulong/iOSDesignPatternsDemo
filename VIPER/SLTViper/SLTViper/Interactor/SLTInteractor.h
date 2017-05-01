@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SLTInteractorDelegate.h"
+#import "SLTInteractorIODelegate.h"
 
-@interface SLTInteractor : NSObject
-
+@interface SLTInteractor : NSObject<SLTInteractorDelegate>
+@property (nonatomic,weak) id<SLTInteractorIODelegate> ioDelegate;
 @end

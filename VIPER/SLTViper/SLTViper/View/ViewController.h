@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SLTPresenterDelegate.h"
+#import "SLTViewDelegate.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<SLTViewDelegate>
 
+@property (nonatomic,strong) id<SLTPresenterDelegate> eventHandler;
 
 @end
 
