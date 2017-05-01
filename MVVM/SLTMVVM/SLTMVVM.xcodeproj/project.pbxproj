@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1410731DAE231AF5D4C5ABE8 /* libPods-SLTMVVMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CA40C8851717A33A20690E /* libPods-SLTMVVMTests.a */; };
+		52F9D880825417335951068B /* libPods-SLTMVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9CCAB388B71EA1C23F14AB /* libPods-SLTMVVM.a */; };
+		748E0F461EB7832C0077560F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E0F451EB7832C0077560F /* main.m */; };
+		748E0F491EB7832C0077560F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E0F481EB7832C0077560F /* AppDelegate.m */; };
+		748E0F4C1EB7832C0077560F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E0F4B1EB7832C0077560F /* ViewController.m */; };
+		748E0F4F1EB7832C0077560F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748E0F4D1EB7832C0077560F /* Main.storyboard */; };
+		748E0F511EB7832C0077560F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748E0F501EB7832C0077560F /* Assets.xcassets */; };
+		748E0F541EB7832C0077560F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748E0F521EB7832C0077560F /* LaunchScreen.storyboard */; };
+		748E0F5F1EB7832C0077560F /* SLTMVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E0F5E1EB7832C0077560F /* SLTMVVMTests.m */; };
+		748E0F6B1EB7839E0077560F /* SLTViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E0F6A1EB7839E0077560F /* SLTViewModel.m */; };
+		748E0F6E1EB783CB0077560F /* SLTUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E0F6D1EB783CB0077560F /* SLTUserModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		748E0F5B1EB7832C0077560F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748E0F391EB7832C0077560F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 748E0F401EB7832C0077560F;
+			remoteInfo = SLTMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1758B51D4F13DC28E55BE975 /* Pods-SLTMVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTMVVMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLTMVVMTests/Pods-SLTMVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F67B9AE353120649455AF16 /* Pods-SLTMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-SLTMVVM/Pods-SLTMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		41B37C5A30168FEFDE482645 /* Pods-SLTMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLTMVVM/Pods-SLTMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		748E0F411EB7832C0077560F /* SLTMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLTMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748E0F451EB7832C0077560F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		748E0F471EB7832C0077560F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		748E0F481EB7832C0077560F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		748E0F4A1EB7832C0077560F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		748E0F4B1EB7832C0077560F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		748E0F4E1EB7832C0077560F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		748E0F501EB7832C0077560F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		748E0F531EB7832C0077560F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		748E0F551EB7832C0077560F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		748E0F5A1EB7832C0077560F /* SLTMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLTMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		748E0F5E1EB7832C0077560F /* SLTMVVMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLTMVVMTests.m; sourceTree = "<group>"; };
+		748E0F601EB7832C0077560F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		748E0F691EB7839E0077560F /* SLTViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTViewModel.h; sourceTree = "<group>"; };
+		748E0F6A1EB7839E0077560F /* SLTViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTViewModel.m; sourceTree = "<group>"; };
+		748E0F6C1EB783CB0077560F /* SLTUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTUserModel.h; sourceTree = "<group>"; };
+		748E0F6D1EB783CB0077560F /* SLTUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTUserModel.m; sourceTree = "<group>"; };
+		98F908228F7A37EF450563A4 /* Pods-SLTMVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTMVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SLTMVVMTests/Pods-SLTMVVMTests.release.xcconfig"; sourceTree = "<group>"; };
+		DF9CCAB388B71EA1C23F14AB /* libPods-SLTMVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SLTMVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CA40C8851717A33A20690E /* libPods-SLTMVVMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SLTMVVMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		748E0F3E1EB7832C0077560F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F9D880825417335951068B /* libPods-SLTMVVM.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748E0F571EB7832C0077560F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1410731DAE231AF5D4C5ABE8 /* libPods-SLTMVVMTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C0C851F933C10601075CEEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41B37C5A30168FEFDE482645 /* Pods-SLTMVVM.debug.xcconfig */,
+				3F67B9AE353120649455AF16 /* Pods-SLTMVVM.release.xcconfig */,
+				1758B51D4F13DC28E55BE975 /* Pods-SLTMVVMTests.debug.xcconfig */,
+				98F908228F7A37EF450563A4 /* Pods-SLTMVVMTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1C5F0D412D9A4848BAE73CCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF9CCAB388B71EA1C23F14AB /* libPods-SLTMVVM.a */,
+				F3CA40C8851717A33A20690E /* libPods-SLTMVVMTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		748E0F381EB7832C0077560F = {
+			isa = PBXGroup;
+			children = (
+				748E0F431EB7832C0077560F /* SLTMVVM */,
+				748E0F5D1EB7832C0077560F /* SLTMVVMTests */,
+				748E0F421EB7832C0077560F /* Products */,
+				0C0C851F933C10601075CEEB /* Pods */,
+				1C5F0D412D9A4848BAE73CCD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		748E0F421EB7832C0077560F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				748E0F411EB7832C0077560F /* SLTMVVM.app */,
+				748E0F5A1EB7832C0077560F /* SLTMVVMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		748E0F431EB7832C0077560F /* SLTMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				748E0F471EB7832C0077560F /* AppDelegate.h */,
+				748E0F481EB7832C0077560F /* AppDelegate.m */,
+				748E0F4A1EB7832C0077560F /* ViewController.h */,
+				748E0F4B1EB7832C0077560F /* ViewController.m */,
+				748E0F691EB7839E0077560F /* SLTViewModel.h */,
+				748E0F6A1EB7839E0077560F /* SLTViewModel.m */,
+				748E0F6C1EB783CB0077560F /* SLTUserModel.h */,
+				748E0F6D1EB783CB0077560F /* SLTUserModel.m */,
+				748E0F4D1EB7832C0077560F /* Main.storyboard */,
+				748E0F501EB7832C0077560F /* Assets.xcassets */,
+				748E0F521EB7832C0077560F /* LaunchScreen.storyboard */,
+				748E0F551EB7832C0077560F /* Info.plist */,
+				748E0F441EB7832C0077560F /* Supporting Files */,
+			);
+			path = SLTMVVM;
+			sourceTree = "<group>";
+		};
+		748E0F441EB7832C0077560F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				748E0F451EB7832C0077560F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		748E0F5D1EB7832C0077560F /* SLTMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				748E0F5E1EB7832C0077560F /* SLTMVVMTests.m */,
+				748E0F601EB7832C0077560F /* Info.plist */,
+			);
+			path = SLTMVVMTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		748E0F401EB7832C0077560F /* SLTMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 748E0F631EB7832C0077560F /* Build configuration list for PBXNativeTarget "SLTMVVM" */;
+			buildPhases = (
+				256AD27D514C3164348042DA /* [CP] Check Pods Manifest.lock */,
+				748E0F3D1EB7832C0077560F /* Sources */,
+				748E0F3E1EB7832C0077560F /* Frameworks */,
+				748E0F3F1EB7832C0077560F /* Resources */,
+				2930605B0C67849BAB8912C3 /* [CP] Embed Pods Frameworks */,
+				E71880B6132D5B4204E83632 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLTMVVM;
+			productName = SLTMVVM;
+			productReference = 748E0F411EB7832C0077560F /* SLTMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		748E0F591EB7832C0077560F /* SLTMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 748E0F661EB7832C0077560F /* Build configuration list for PBXNativeTarget "SLTMVVMTests" */;
+			buildPhases = (
+				B3C512050D1BFA6B61F4FCA6 /* [CP] Check Pods Manifest.lock */,
+				748E0F561EB7832C0077560F /* Sources */,
+				748E0F571EB7832C0077560F /* Frameworks */,
+				748E0F581EB7832C0077560F /* Resources */,
+				51A8C74F67ADC86230D769D4 /* [CP] Embed Pods Frameworks */,
+				D90B3ED62B43A6D9634E47E4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				748E0F5C1EB7832C0077560F /* PBXTargetDependency */,
+			);
+			name = SLTMVVMTests;
+			productName = SLTMVVMTests;
+			productReference = 748E0F5A1EB7832C0077560F /* SLTMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		748E0F391EB7832C0077560F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = LiuShulong;
+				TargetAttributes = {
+					748E0F401EB7832C0077560F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = YREGVU8659;
+						ProvisioningStyle = Automatic;
+					};
+					748E0F591EB7832C0077560F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = YREGVU8659;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 748E0F401EB7832C0077560F;
+					};
+				};
+			};
+			buildConfigurationList = 748E0F3C1EB7832C0077560F /* Build configuration list for PBXProject "SLTMVVM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 748E0F381EB7832C0077560F;
+			productRefGroup = 748E0F421EB7832C0077560F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				748E0F401EB7832C0077560F /* SLTMVVM */,
+				748E0F591EB7832C0077560F /* SLTMVVMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		748E0F3F1EB7832C0077560F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748E0F541EB7832C0077560F /* LaunchScreen.storyboard in Resources */,
+				748E0F511EB7832C0077560F /* Assets.xcassets in Resources */,
+				748E0F4F1EB7832C0077560F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748E0F581EB7832C0077560F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		256AD27D514C3164348042DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2930605B0C67849BAB8912C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLTMVVM/Pods-SLTMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51A8C74F67ADC86230D769D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLTMVVMTests/Pods-SLTMVVMTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C512050D1BFA6B61F4FCA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D90B3ED62B43A6D9634E47E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLTMVVMTests/Pods-SLTMVVMTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E71880B6132D5B4204E83632 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLTMVVM/Pods-SLTMVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		748E0F3D1EB7832C0077560F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748E0F6B1EB7839E0077560F /* SLTViewModel.m in Sources */,
+				748E0F4C1EB7832C0077560F /* ViewController.m in Sources */,
+				748E0F491EB7832C0077560F /* AppDelegate.m in Sources */,
+				748E0F461EB7832C0077560F /* main.m in Sources */,
+				748E0F6E1EB783CB0077560F /* SLTUserModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748E0F561EB7832C0077560F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748E0F5F1EB7832C0077560F /* SLTMVVMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		748E0F5C1EB7832C0077560F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 748E0F401EB7832C0077560F /* SLTMVVM */;
+			targetProxy = 748E0F5B1EB7832C0077560F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		748E0F4D1EB7832C0077560F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				748E0F4E1EB7832C0077560F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		748E0F521EB7832C0077560F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				748E0F531EB7832C0077560F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		748E0F611EB7832C0077560F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		748E0F621EB7832C0077560F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		748E0F641EB7832C0077560F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B37C5A30168FEFDE482645 /* Pods-SLTMVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YREGVU8659;
+				INFOPLIST_FILE = SLTMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liushulong.SLTMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		748E0F651EB7832C0077560F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F67B9AE353120649455AF16 /* Pods-SLTMVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YREGVU8659;
+				INFOPLIST_FILE = SLTMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liushulong.SLTMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		748E0F671EB7832C0077560F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1758B51D4F13DC28E55BE975 /* Pods-SLTMVVMTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YREGVU8659;
+				INFOPLIST_FILE = SLTMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liushulong.SLTMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SLTMVVM.app/SLTMVVM";
+			};
+			name = Debug;
+		};
+		748E0F681EB7832C0077560F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F908228F7A37EF450563A4 /* Pods-SLTMVVMTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YREGVU8659;
+				INFOPLIST_FILE = SLTMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liushulong.SLTMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SLTMVVM.app/SLTMVVM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		748E0F3C1EB7832C0077560F /* Build configuration list for PBXProject "SLTMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				748E0F611EB7832C0077560F /* Debug */,
+				748E0F621EB7832C0077560F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		748E0F631EB7832C0077560F /* Build configuration list for PBXNativeTarget "SLTMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				748E0F641EB7832C0077560F /* Debug */,
+				748E0F651EB7832C0077560F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		748E0F661EB7832C0077560F /* Build configuration list for PBXNativeTarget "SLTMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				748E0F671EB7832C0077560F /* Debug */,
+				748E0F681EB7832C0077560F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 748E0F391EB7832C0077560F /* Project object */;
+}
